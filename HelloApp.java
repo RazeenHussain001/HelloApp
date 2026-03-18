@@ -4,14 +4,14 @@ public class HelloApp {
 
         if (args.length > 0) {
 
+            // Enhanced for loop
             for (String name : args) {
-                System.out.println("Hello " + name);
+                System.out.println("Hello, " + name + "!");
             }
 
         } else {
 
-            System.out.println("Hello World");
-
+            System.out.println("Hello, World!");
         }
     }
 }
