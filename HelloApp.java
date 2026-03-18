@@ -4,10 +4,17 @@ public class HelloApp {
 
         if (args.length > 0) {
 
-            // Enhanced for loop
+            String result = "";
+
+            // Build string with delimiter
             for (String name : args) {
-                System.out.println("Hello, " + name + "!");
+                result += name + ", ";
             }
+
+            // Remove last ", "
+            result = result.substring(0, result.length() - 2);
+
+            System.out.println("Hello, " + result + "!");
 
         } else {
 
